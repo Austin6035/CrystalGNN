@@ -27,7 +27,6 @@ class GCN_Layer(torch.nn.Module):
         nbr_core = F.softplus(nbr_core)
 
         nbr_sumed = nbr_core * nbr_filter
-        # nbr_sumed.shape=(N * M, atom_fea_len)
         nbr_sumed = nbr_sumed.reshape((-1, self.num_nbr, self.atom_fea_len))
         nbr_sumed = torch.sum(nbr_sumed, dim=1)
         nbr_sumed = self.bn2(nbr_sumed)
