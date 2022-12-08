@@ -95,15 +95,6 @@ class AtomFeatureEncoder(object):
         atom_feature = np.concatenate((f1, f2))
         return atom_feature
 
-    # def get_atom_features(self, atom_number):
-    #     atom = Element.from_Z(atom_number)
-    #     f1 = np.array([atom.group - 1,
-    #                    atom.row - 1,
-    #                    self.__block_list.index(atom.block)])
-    #     f2 = np.array([self.__disperse_list[i][atom.number - 1] for i in range(5)])
-    #     atom_feature = np.concatenate((f1, f2))
-    #     return atom_feature
-
 
     @staticmethod
     def get_full_dims():
