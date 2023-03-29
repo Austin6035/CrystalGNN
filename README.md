@@ -1,5 +1,5 @@
 ### Introduction
-CrystalGNN: A Self-Learning-Input Graph Neural Network for materials properties prediction
+CrystalGNN: A Self-Learning-Input Graph Neural Network for predicting properties of crystals
 
 ### Requirements:
 
@@ -9,13 +9,13 @@ PyTorch 1.9.0-cu10.1
 
 PyTorch Geometric 2.0.3
 
-Obabel
+Mendeleev
 
 Pymatgen
 
 ### How to install:
 
-- git clone http://ip:port/xxx
+- git clone https://github.com/Austin6035/CrystalGNN.git
 
 - unzip CrystalGNN.zip
 
